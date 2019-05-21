@@ -126,7 +126,8 @@ void puzzle::onSpinBoxValueChanged(int value)
 void puzzle::orderBroken()
 {
 	int k_x1=0, k_y1=0, x2, y2,n;
-	for (int i = 0; i < 20; i++) {
+	srand((int)time(0));
+	for (int i = 0; i < 50; i++) {
 		n = rand() % 4;
 		int cells[4][2] = { 0,-1,0,1,1,0,-1,0 };
 		int y2 = k_y1 - cells[n][0];
